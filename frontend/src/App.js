@@ -1,5 +1,5 @@
+// import Header from "./components/Header/header"
 import Register from "./components/Register/Register";
-
 
 function App() {
   return (
