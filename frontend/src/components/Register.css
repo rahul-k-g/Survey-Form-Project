@@ -1,0 +1,33 @@
+.register-form{
+  background: transparent linear-gradient(0deg, #6ED4FF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+border-radius: 43px;
+opacity: 0.79;
+}
+  .Register{
+    top: -24.9996337890625px;
+left: -18px;
+width: 1938px;
+height: 1132px;
+opacity: 1;
+  }
+  .right-heading h1{
+    top: 193px;
+left: 1177px;
+width: 230px;
+height: 63px;
+text-align: center;
+letter-spacing: 0.47px;
+color: #000000;
+opacity: 1;
+  }
+  .right-sub-heading h2{
+
+  top: 278px;
+left: 1111px;
+width: 354px;
+height: 24px;
+text-align: center;
+letter-spacing: 0.4px;
+color: #808080;
+opacity: 1
+  }
