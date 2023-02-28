@@ -4,7 +4,7 @@ import Sidebar from "../Sidebar/Sidebar";
 
 const Landing = () => {
   return (
-    <div>
+    <div className="LContianer">
 
       <Header />
       <Sidebar />

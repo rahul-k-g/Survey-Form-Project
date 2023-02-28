@@ -1,6 +1,6 @@
 import React from 'react'
 import more from "../images/next@2x.jpg"
-import "./sidebar.css"
+import "./Sidebar.css"
 function Sidebar() {
   return (
     <>
