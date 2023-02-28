@@ -1,0 +1,28 @@
+.sidenav {
+    height: 100%;
+  width: 63px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #278DF1;
+  overflow-x: hidden;
+ 
+}
+.sidenav i {
+  float: left;
+  width: 100%;
+  padding: 17px 17px;
+  color: #FFF;
+  font-size: 22px;
+}
+i.fa.fa-home {
+  margin-top: 212px;
+}
+.sidenav a {
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+}
