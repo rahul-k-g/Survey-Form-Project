@@ -1,98 +1,127 @@
 html {
-  
   min-height: 100%;
-}body
-{
-    background: transparent linear-gradient(0deg, #6ED4FF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+body {
+  background: transparent linear-gradient(0deg, #6ed4ff 0%, #ffffff 100%) 0% 0%
+    no-repeat padding-box;
   border-radius: 43px;
   opacity: 0.79;
-  font-family: 'Poppins', sans-serif;
-}section.register-form {
+  font-family: "Poppins", sans-serif;
+}
+section.register-form {
   margin-top: 5%;
   position: relative;
-}.text {
+}
+.text {
   margin-top: 11%;
 }
 .text h1 {
   font-weight: 700;
   padding-right: 24%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 31px;
   line-height: 41px;
-}input[type=text]::placeholder {
+}
+input[type="text"]::placeholder {
   font-size: 12px;
 }
 h2 {
   text-align: center;
   font-weight: 700;
   color: #000;
-  font-family: 'Montserrat', sans-serif;
-}p {
-  font-family: 'Montserrat', sans-serif;
-}.form p {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+.form p {
   text-align: center;
   margin-bottom: 7%;
-}.text span {
+}
+.text span {
   margin-top: 42px;
   position: relative;
   float: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   width: 100%;
-}button {
-  background: #278DF1 0% 0% no-repeat padding-box;
+}
+button {
+  background: #278df1 0% 0% no-repeat padding-box;
   border-radius: 28px;
   border: none;
   padding: 8px 42px;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 11px;
-}.form {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.registerform {
+  background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 30px #00000029;
   border-radius: 41px;
   padding: 20px 4%;
- 
-}input[type=text], input[type=password] {
+  top: 50px;
+  left: 20px; 
+  width: 450px;
+  height: 450px;
+}
+
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 7px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   background: none;
-  border-bottom: 1px solid #278DF1;
+  border-bottom: 1px solid #278df1;
 }
-input[type=text]:focus, input[type=password]:focus {
-background-color: #ddd;
-outline: none;
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
 hr {
-border: 1px solid #f1f1f1;
-margin-bottom: 25px;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
 }
 .form-reg {
   padding-right: 6%;
   float: left;
   width: 50%;
-}label {
+}
+label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  color: #278DF1;
+  color: #278df1;
   font-weight: 400;
   font-size: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .form-reg.checkbox {
   width: 100%;
-}.form-reg.checkbox {
+}
+.form-reg.checkbox {
   text-decoration: underline;
   text-align: center;
-  color: #53A4F4;
-  margin-top: 4%;    font-size: 13px;
-}.form-reg.button {
+  color: #53a4f4;
+  margin-top: 4%;
+  font-size: 13px;
+}
+.form-reg.button {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+.form-reg.errorContianer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid black;
+}
+
+
