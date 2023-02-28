@@ -4,13 +4,11 @@ import "./header.css"
 function Header() {
   return (
     <>
-    <div className='header'>
-        <h5>LOGO</h5>
-        <div className='profile'>
-        <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" alt="Profile" className='profimg'/>
-        <img src={more} alt="More" className='more'/>
-        </div>
-    </div>
+    <div className="header">
+ <p className="logo">LOGO</p><div className="user"><i className="fa fa-user"></i><i className="fa fa-angle-down"></i>
+</div>
+
+ </div>
     </>
   )
 }
