@@ -1,6 +1,6 @@
 import React from 'react'
 import more from "../images/next@2x.jpg"
-import "./header.css"
+import "./Header.css"
 function Header() {
   return (
     <>

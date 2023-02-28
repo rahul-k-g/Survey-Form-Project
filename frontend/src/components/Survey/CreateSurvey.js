@@ -2,7 +2,7 @@ import './Survey.css';
 import React, {useState} from 'react';
 import {useDropzone} from 'react-dropzone';
 import axios from 'axios';
-import Header from '../Header/header';
+import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
 function CreateSurvey() {
   const [image,setImage] =useState([]);
@@ -70,7 +70,7 @@ function CreateSurvey() {
    
     <form id="form" >
   <div className="surveys"> <h2 className="survey">Create Survey</h2>
-    <div className="form-reg button survey"><button type="button" className="registerbtn">Cancel</button> <button type="submit" className="registerbtns" onClick={handleSubmit}>Next</button></div></div> <div className="surveysform">
+    <div className="form-reg button survey"><button type="button" className="cancel">Cancel</button> <button type="submit" className="next" onClick={handleSubmit}>Next</button></div></div> <div className="surveysform">
    <div className="form-reg"> <label  htmlFor="name"><b>Name</b></label>
     <input type="text" className="txtinput" placeholder="Enter Name" name="name" id="name"   value={formValue.name} required onChange={handleChange} /></div>
    <div className="form-reg input-group date"> <div className="form-reg">  <label htmlFor="startdate"><b>Start date</b></label>

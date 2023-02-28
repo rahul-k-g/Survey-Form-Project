@@ -119,7 +119,7 @@ function Register() {
               </label>
               <input
                 type="text"
-                placeholder="Enter Name"
+                placeholder="Enter Name" className="reg-input"
                 name="name"
                 id="name"
                 required
@@ -134,7 +134,7 @@ function Register() {
               </label>
               <input
                 type="text"
-                placeholder="Enter Email"
+                placeholder="Enter Email" className="reg-input"
                 name="email"
                 id="email"
                 required
@@ -154,7 +154,7 @@ function Register() {
               <input
                 type="text"
                 placeholder="Enter Phone"
-                name="phone"
+                name="phone" className="reg-input"
                 id="phone"
                 required
                 onChange={(e) => setphone(e.target.value)}
@@ -168,7 +168,7 @@ function Register() {
               </label>
               <input
                 type="text"
-                placeholder="Enter Profession"
+                placeholder="Enter Profession" className="reg-input"
                 name="prof"
                 id="prof"
                 required
@@ -182,7 +182,7 @@ function Register() {
                 <b>Password</b>
               </label>
               <input
-                type="password"
+                type="password" className="reg-input"
                 placeholder="Enter password"
                 name="pass"
                 id="pass"
@@ -202,7 +202,7 @@ function Register() {
               </label>
               <input
                 type="password"
-                placeholder="Confirm password"
+                placeholder="Confirm password" className="reg-input"
                 name="cpass"
                 id="cpass"
                 required
