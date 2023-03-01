@@ -64,10 +64,11 @@ section.register-form {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
   }
-  .form-reg {
+  .qstn-reg {
+    position: relative;
     padding-right: 6%;
-    float: left;
-    width: 50%;
+    width: 100%;
+    margin-top: 9px;
   }label {
     display: inline-block;
     max-width: 100%;
@@ -143,7 +144,18 @@ section.register-form {
     margin: 0px 0 22px 0;
     display: inline-block;
     border: 1px solid #ccc;
-  }.surveysform .form-reg {
+  }
+  .surveysform.qstn {
+    width:100%;
+}
+.radiotext{
+    font-size:12px;
+}
+input[type="radio"] {
+    margin-right: 11px;
+    position: relative;
+}
+  .surveysform .form-reg {
    
     margin-top: 10px;
   
