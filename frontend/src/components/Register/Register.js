@@ -218,11 +218,11 @@ function Register() {
               <input type="checkbox" />I agree to Terms & Condition receiving
               marketing and promotional materials
             </div>
-            <div className="form-reg button">
+            <div className="form-reg regibtn">
               {" "}
               <button
                 type="submit"
-                className="registerbtn"
+                className="regibtn"
                 onClick={HandleSignup}
                 disabled={
                   isSubmitValid === 0 ||

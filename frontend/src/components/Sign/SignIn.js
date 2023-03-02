@@ -27,7 +27,7 @@ const SignIn = () => {
         localStorage.setItem("jwt", data.token)
         localStorage.setItem("user", JSON.stringify(data.user))
         // window.location.href = '/landing'
-        navigate('/surveylist');
+        navigate('/mainpage');
     }
     setResponse(data);
     console.log(response.message === "Login Successful");
@@ -82,12 +82,12 @@ const SignIn = () => {
                 />
               </div>
             </div>
-            <div className="form-reg button">
+            <div className="form-reg signbtn">
               {" "}
               <button
                 onClick={HandleLogin}
                 type="submit"
-                className="registerbtn"
+                className="signbtn"
               >
                 Sign in
               </button>

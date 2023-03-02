@@ -1,6 +1,7 @@
 import React from 'react'
 import more from "../images/next@2x.jpg"
 import "./Sidebar.css"
+import logout from "../images/logoutimages.jpg"
 function Sidebar() {
   return (
     <>

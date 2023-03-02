@@ -91,7 +91,7 @@ let arr2 = []
       <div className="container">
         <div className="row">
           <form id="form">
-            <div className="surveys list">
+            <div className="mainsurveys list">
               {" "}
               <h2 className="survey">Survey List</h2>
               <div className="search">
@@ -102,7 +102,7 @@ let arr2 = []
                 <i className="fa fa-bars"></i>
                 <i className="fa fa-filter"></i>{" "}
                 <Link to="/createsurvey">
-                  <button type="submit" className="registerbtns">
+                  <button type="submit" className="createbtn">
                     Create
                   </button>
                 </Link>
@@ -140,8 +140,8 @@ let arr2 = []
                                 {/* <td >{value.otherCriteria}</td> */}
                                 
                                 {/* <td>{value.fileUploaded}</td> */}
-                                <td><button id="edit">edit</button></td>
-                                <td><button id="edit">delete</button></td>
+                                <td><button className="edit">edit</button></td>
+                                <td><button className="delete">delete</button></td>
                                 {/* <td> <button id="dlt" onClick={(e) => { dltContact(e); setdeletemodal(true); setpostdelete(true) }} name={value._id}>delete</button></td> */}
 
                                 </tr>

@@ -115,7 +115,7 @@ label {
   height: 400px;
   border: 3px solid #ccc;
 }
-button.registerbtn {
+button.createbtn {
   position: relative;
   left: 45%;
   margin: 2px;
@@ -186,8 +186,9 @@ h2.survey {
   font-size: 23px;
   text-align: left;
 }
-.surveys {
-  float: left;
+.mainsurveys {
+  /* float: left; */
+  margin-left: 20px;
   width: 100%;
   border-bottom: 1px solid #ccc;
 }
@@ -195,7 +196,7 @@ h2.survey {
   margin-top: -4%;
   padding-bottom: 15px;
 }
-.form-reg.button.survey button.registerbtn {
+.form-reg.button.survey button.createbtn {
   border-radius: 5px;
   background: #fff;
   color: #278df1;
@@ -308,4 +309,14 @@ tr {
 }
 .actions {
   text-align: center;
+}
+.edit {
+  width: 20px;
+  font-size: 10px;
+  padding-left: 23px;
+}
+.delete {
+  width: 20px;
+  font-size: 10px;
+  padding-left: 23px;
 }
