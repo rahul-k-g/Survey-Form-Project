@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function CreateSurvey() {
-
   const navigate = useNavigate();
   const [image, setImage] = useState([]);
   const [selectedFile, setSelectedFile] = React.useState(null);
@@ -81,12 +80,18 @@ function CreateSurvey() {
               {" "}
               <h2 className="survey">Create Survey</h2>
               <div className="form-reg button survey">
-                <button type="button" className="cancel">
-                  Cancel
+                <button
+                  type="button"
+                  className="savesurvey"
+                  onClick={HandleCreateSurvey}
+                >
+                  Save
                 </button>{" "}
-                <button type="submit" className="next" onClick={HandleCreateSurvey}>
-                  Next
-                </button>
+                <Link to="/createquestions">
+                  <button type="submit" className="next">
+                    Next
+                  </button>
+                </Link>
               </div>
             </div>{" "}
             <div className="surveysform">

@@ -102,9 +102,9 @@ margin-bottom: 25px;
   
   border:3px solid #ccc;
 }
-button.cancel {
+button.savesurvey {
   position: relative;
-  left: 45%;
+  left: 40%;
   margin:2px;
 }
 section.register-form.sec {
@@ -120,7 +120,7 @@ h2.survey {
   width: 100%;border-bottom: 1px solid #ccc;
 }.form-reg.button.survey {
   margin-top: -4%;        padding-bottom: 15px;
-}.form-reg.button.survey button.cancel {
+}.form-reg.button.survey button.savesurvey {
   border-radius: 5px;
   background: #FFF;
   color: #278DF1;
