@@ -38,3 +38,10 @@ i.fa.fa-user {
   padding-right: 55px;
   background-color: rgb(220, 62, 62);
 }
+
+
+  .user svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    fill:black;
+    top:0;
+  } 
+

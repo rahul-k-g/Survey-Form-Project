@@ -14,6 +14,7 @@
   padding: 17px 17px;
   color: #fff;
   font-size: 22px;
+  margin-top:210px;
 }
 i.fa.fa-home {
   margin-top: 212px;
@@ -25,6 +26,21 @@ i.fa.fa-home {
   color: #818181;
   display: block;
 }
-.sidenav.logoutimg{
-  width:10px;
+.iconimg{
+  position: relative;
+  width: 21px;
+  margin-left: 15px;
+  top: 210px;
+  margin-bottom: 15px;
 }
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  position: relative;
+  top: 210px;
+  width: 80px;
+  position: relative;
+  right: 15px;
+  bottom:5px;
+  height:2em !important;
+  fill:white;
+}
+

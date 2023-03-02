@@ -1,5 +1,6 @@
+
 import React from "react";
-import more from "../images/next@2x.jpg";
+import Person2Icon from '@mui/icons-material/Person2';
 import "./Header.css";
 function Header() {
   return (
@@ -8,6 +9,7 @@ function Header() {
         <p className="logo">LOGO</p>
         <div className="user">
         <button className="logout ">Logout</button>
+        <Person2Icon/>
           <i className="fa fa-angle-down"></i>
         </div>
       </div>
