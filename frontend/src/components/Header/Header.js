@@ -1,11 +1,12 @@
 import React from 'react'
-import more from "../images/next@2x.jpg"
+import Person2Icon from '@mui/icons-material/Person2';
 import "./Header.css"
+
 function Header() {
   return (
     <>
     <div className="header">
- <p className="logo">LOGO</p><div className="user"><i className="fa fa-user"></i><i className="fa fa-angle-down"></i>
+ <p className="logo">LOGO</p><div className="user"><Person2Icon/><i className="fa fa-angle-down"></i>
 </div>
 
  </div>

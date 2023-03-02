@@ -309,3 +309,11 @@ tr {
 .actions {
   text-align: center;
 }
+.search svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  top: 0;
+  fill: black;
+}
+.survey.list svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  top: 0;
+  fill: black;
+}

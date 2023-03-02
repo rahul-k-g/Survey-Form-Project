@@ -8,7 +8,9 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Surveylist from "../Surveylist/Surveylist";
 import { useLocation } from "react-router-dom";
-
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
 function MainPage() {
   const location = useLocation();
   const id = location.pathname.split("/")[1];
@@ -95,12 +97,13 @@ let arr2 = []
               {" "}
               <h2 className="survey">Survey List</h2>
               <div className="search">
-                <i className="fa fa-search"></i>
+                <SearchIcon/>
                 <input type="search" id="site-search" name="q" />
               </div>
               <div className="form-reg button survey list">
-                <i className="fa fa-bars"></i>
-                <i className="fa fa-filter"></i>{" "}
+                <MenuIcon/>
+             <FilterAltIcon />
+                {" "}
                 <Link to="/createsurvey">
                   <button type="submit" className="registerbtns">
                     Create

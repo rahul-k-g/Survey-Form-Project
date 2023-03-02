@@ -27,7 +27,7 @@ const SignIn = () => {
         localStorage.setItem("jwt", data.token)
         localStorage.setItem("user", JSON.stringify(data.user))
         // window.location.href = '/landing'
-        navigate('/surveylist');
+        navigate('/mainpage');
     }
     setResponse(data);
     console.log(response.message === "Login Successful");
