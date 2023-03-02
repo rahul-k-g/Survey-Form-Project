@@ -14,6 +14,8 @@ function CreateQuestions() {
     const [qstn2option,setQstn2option] = useState("");
     const [qstn3option,setQstn3option] = useState("");
     const [response, setResponse] = useState([]);
+    const loggedInUser = localStorage.getItem("user");
+    console.log("logged user " +loggedInUser)
     const handleQuestion= async (event)=>{
         setQuestion1("")
         setQuestion2("")
