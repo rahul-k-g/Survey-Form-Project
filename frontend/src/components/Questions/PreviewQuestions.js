@@ -84,7 +84,7 @@ function PreviewQuestions() {
               {" "}
               <h2 className="survey">Preview Questions</h2>
               <div className="form-reg button survey">
-                <button type="button" className="cancel">
+                <button type="button" className="closepreview">
                   Close Preview
                 </button>{" "}
                 <button type="submit" className="next" onClick={handleQuestion} >

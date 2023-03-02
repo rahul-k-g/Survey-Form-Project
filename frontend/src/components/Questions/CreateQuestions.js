@@ -58,9 +58,13 @@ function CreateQuestions() {
               {" "}
               <h2 className="survey">Create Questions</h2>
               <div className="form-reg button survey">
+                <Link to="/previewquestions">
+
                 <button type="button" className="cancel">
                   Preview
-                </button>{" "}
+                </button>
+                </Link>
+                
                 <button type="submit" className="next" onClick={handleQuestion}>
                   Save
                 </button>

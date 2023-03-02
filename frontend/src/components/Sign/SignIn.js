@@ -69,7 +69,7 @@ const SignIn = () => {
 
               <div className="form-reg">
                 {" "}
-                <label htmlFor="pass">
+                <label htmlFor="pass" className="passwordlabel">
                   <b>Password</b>
                 </label>
                 <input

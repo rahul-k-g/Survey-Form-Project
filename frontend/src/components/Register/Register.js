@@ -105,21 +105,22 @@ function Register() {
             <h1>Welcome Page One line text Will be here</h1>
             <p>Sign in to continue access pages</p>
             <span>Already Have An Account</span>
-            <Link to='/'>
+            <Link to="/">
               <button>Sign In</button>
             </Link>
           </div>
           <div className="col-sm-8 registerform">
             <h2>Register</h2>
-            <p>Register to continue access pages</p>
-            <div className="form-reg">
+            <p className="para">Register to continue access pages</p>
+            <div className="form-regt">
               {" "}
               <label htmlFor="name">
                 <b>Name</b>
               </label>
               <input
                 type="text"
-                placeholder="Enter Name" className="reg-input"
+                placeholder="Enter Name"
+                className="reg-input"
                 name="name"
                 id="name"
                 required
@@ -127,14 +128,15 @@ function Register() {
                 value={username}
               />
             </div>
-            <div className="form-reg">
+            <div className="form-regt">
               {" "}
               <label htmlFor="email">
                 <b>Email</b>
               </label>
               <input
                 type="text"
-                placeholder="Enter Email" className="reg-input"
+                placeholder="Enter Email"
+                className="reg-input"
                 name="email"
                 id="email"
                 required
@@ -146,7 +148,7 @@ function Register() {
               />
             </div>
 
-            <div className="form-reg">
+            <div className="form-regt">
               {" "}
               <label htmlFor="phone">
                 <b>Phone</b>
@@ -154,21 +156,23 @@ function Register() {
               <input
                 type="text"
                 placeholder="Enter Phone"
-                name="phone" className="reg-input"
+                name="phone"
+                className="reg-input"
                 id="phone"
                 required
                 onChange={(e) => setphone(e.target.value)}
                 value={phone}
               />
             </div>
-            <div className="form-reg">
+            <div className="form-regt">
               {" "}
               <label htmlFor="prof">
                 <b>Profession</b>
               </label>
               <input
                 type="text"
-                placeholder="Enter Profession" className="reg-input"
+                placeholder="Enter Profession"
+                className="reg-input"
                 name="prof"
                 id="prof"
                 required
@@ -176,13 +180,14 @@ function Register() {
                 value={profession}
               />
             </div>
-            <div className="form-reg">
+            <div className="form-regt">
               {" "}
               <label htmlFor="pass">
                 <b>Password</b>
               </label>
               <input
-                type="password" className="reg-input"
+                type="password"
+                className="reg-input"
                 placeholder="Enter password"
                 name="pass"
                 id="pass"
@@ -195,14 +200,15 @@ function Register() {
               />
             </div>
 
-            <div className="form-reg">
+            <div className="form-regt">
               {" "}
               <label htmlFor="cpass">
                 <b>Confirm Password</b>
               </label>
               <input
                 type="password"
-                placeholder="Confirm password" className="reg-input"
+                placeholder="Confirm password"
+                className="reg-input"
                 name="cpass"
                 id="cpass"
                 required
@@ -213,12 +219,12 @@ function Register() {
                 value={cpass}
               />
             </div>
-            <div className="form-reg checkbox">
+            <div className="form-regt checkbox">
               {" "}
               <input type="checkbox" />I agree to Terms & Condition receiving
               marketing and promotional materials
             </div>
-            <div className="form-reg regibtn">
+            <div className="form-regt regibtn">
               {" "}
               <button
                 type="submit"

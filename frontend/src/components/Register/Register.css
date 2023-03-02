@@ -34,9 +34,9 @@ h2 {
 p {
   font-family: "Montserrat", sans-serif;
 }
-.form p {
+.para {
   text-align: center;
-  margin-bottom: 7%;
+  margin-bottom: 1%;
 }
 .text span {
   margin-top: 42px;
@@ -60,15 +60,15 @@ button {
   box-shadow: 0px 3px 30px #00000029;
   border-radius: 41px;
   padding: 20px 4%;
-  top: 50px;
+  top: 40px;
   left: 20px; 
   width: 450px;
-  height: 450px;
+  height: 470px;
 }
 
 .reg-input {
   width: 100% !important;
-  padding: 7px !important;
+  padding: 3px !important;
   margin: 5px 0 22px 0 !important;
   display: inline-block !important;
   border: none !important;
@@ -85,7 +85,7 @@ hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-.form-reg {
+.form-regt {
   padding-right: 6%;
   float: left;
   width: 50%;
@@ -99,28 +99,30 @@ label {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
 }
-.form-reg.checkbox {
+.form-regt.checkbox {
   width: 100%;
 }
-.form-reg.checkbox {
+.form-regt.checkbox {
   text-decoration: underline;
   text-align: center;
   color: #53a4f4;
   margin-top: 4%;
   font-size: 13px;
 }
-.form-reg.regibtn {
+.form-regt.regibtn {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.form-reg.errorContianer {
+.form-regt.errorContianer {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   border:1px solid black;
+  flex-direction: column;
+  
 }
 
 
