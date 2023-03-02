@@ -82,12 +82,12 @@ const SignIn = () => {
                 />
               </div>
             </div>
-            <div className="form-reg button">
+            <div className="form-reg signbtn">
               {" "}
               <button
                 onClick={HandleLogin}
                 type="submit"
-                className="registerbtn"
+                className="signbtn"
               >
                 Sign in
               </button>
