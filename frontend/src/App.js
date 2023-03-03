@@ -2,7 +2,7 @@ import Register from "./components/Register/Register";
 import CreateSurvey from "./components/Survey/CreateSurvey";
 import MainPage from "./components/MainPage/MainPage";
 import SignIn from "./components/Sign/SignIn";
-
+import Profile from "./components/Profile/Profile";
 import CreateQuestions from "./components/Questions/CreateQuestions";
 import PreviewQuestions from "./components/Questions/PreviewQuestions";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -23,7 +23,7 @@ function App() {
             <Route path="/previewquestions" element={<PreviewQuestions />}></Route>
 
             <Route path="/mainpage" element={<MainPage/>}></Route>
-            {/* <Route path="/surveylist" element={<Surveylist/>}></Route> */}
+            <Route path="/profile" element={<Profile/>}></Route>
 
             <Route path="*" element={<h1>404</h1>}></Route>
           </Routes>

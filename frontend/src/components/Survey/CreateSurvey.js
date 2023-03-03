@@ -49,7 +49,9 @@ function CreateSurvey() {
     const data = await resp.json();
     setResponse(data);
     if (data.data) {
-      navigate("/surveylist");
+      // navigate("/mainpage");
+      // window.location.reload(true)
+      console.log("Create Successfully")
     }
   };
 
