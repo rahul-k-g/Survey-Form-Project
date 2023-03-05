@@ -38,7 +38,7 @@ function MainPage() {
   //  }, [id]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/getallsurvey", {
+    fetch("https://surveyformprojectbackend.onrender.com/api/getallsurvey", {
       headers: {
         Authorization: localStorage.getItem("jwt"),
       },

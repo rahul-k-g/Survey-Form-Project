@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Header() {
   const navigate = useNavigate();
   const [image, setImage] = useState([]);
-  
+
   const HandleLogout = () => {
     localStorage.removeItem("jwt");
     window.location.reload();
@@ -26,9 +26,8 @@ function Header() {
   const na = em.split("@")[0];
   console.log(na);
   console.log(JSON.parse(y));
-  
-  //for profile pic change
 
+  //for profile pic change
 
   useEffect(() => {
     fetchData();
@@ -38,7 +37,7 @@ function Header() {
   console.log(user);
 
   const fetchData = async () => {
-    await fetch(`http://localhost:5000/api/profilepic/${user}`, {
+    await fetch(`https://surveyformprojectbackend.onrender.com/api/profilepic/${user}`, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -63,14 +62,12 @@ function Header() {
           {/* <Person2Icon /> */}
 
           <Link to="/profile">
-            {image && 
-              <img src={image} alt="profilepic" width="35px" />
-            }
-
-            {image == "" && <Person2Icon />}
+            {image && <img src={image} alt="profilepic" width="35px" /> }
+            {image === "" && <Person2Icon />}
           </Link>
-
-          <i className="fa fa-angle-down"></i>
+          <Link to="/profile">
+            <button className="addImage">Change Profile</button>
+          </Link>
         </div>
       </div>
     </>

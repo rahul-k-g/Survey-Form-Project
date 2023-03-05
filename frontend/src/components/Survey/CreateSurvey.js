@@ -15,9 +15,9 @@ function CreateSurvey() {
   const [name, setName] = useState("");
   const [startdate, setStartdate] = useState("");
   const [enddate, setEnddate] = useState("");
-  const [desc, setDesc] = useState("");
-  const [ocrit, setOcrit] = useState("");
-  const [surveytype, setSurveytype] = useState("");
+  const [description, setdescription] = useState("");
+  const [otherCriteria, setotherCriteria] = useState("");
+  const [surveyType, setSurveyType] = useState("");
   const [response, setResponse] = useState([]);
 
   const HandleCreateSurvey = async (event) => {
@@ -25,12 +25,12 @@ function CreateSurvey() {
     setName("");
     setStartdate("");
     setEnddate("");
-    setDesc("");
-    setOcrit("");
-    setSurveytype("");
+    setdescription("");
+    setotherCriteria("");
+    setSurveyType("");
     setImage("");
 
-    const resp = await fetch("http://localhost:5000/api/creatsurvey", {
+    const resp = await fetch("https://surveyformprojectbackend.onrender.com/api/creatsurvey", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,16 +40,16 @@ function CreateSurvey() {
         name,
         startdate,
         enddate,
-        desc,
-        ocrit,
-        surveytype,
+        description,
+        otherCriteria,
+        surveyType,
       }),
     });
     console.log(data.data);
     const data = await resp.json();
     setResponse(data);
     if (data.data) {
-      // navigate("/mainpage");
+      navigate("/mainpage");
       // window.location.reload(true)
       console.log("Create Successfully")
     }
@@ -160,8 +160,8 @@ function CreateSurvey() {
                   name="desc"
                   id="desc"
                   required
-                  onChange={(e) => setDesc(e.target.value)}
-                  value={desc}
+                  onChange={(e) => setdescription(e.target.value)}
+                  value={description}
                 />
               </div>
               <div className="form-reg">
@@ -176,8 +176,8 @@ function CreateSurvey() {
                   name="ocrit"
                   id="ocrit"
                   required
-                  onChange={(e) => setOcrit(e.target.value)}
-                  value={ocrit}
+                  onChange={(e) => setotherCriteria(e.target.value)}
+                  value={otherCriteria}
                 />
               </div>
               <div className="form-reg">
@@ -191,8 +191,8 @@ function CreateSurvey() {
                   placeholder="Survey Type"
                   name="surveytype"
                   id="surveytype"
-                  onChange={(e) => setSurveytype(e.target.value)}
-                  value={surveytype}
+                  onChange={(e) => setSurveyType(e.target.value)}
+                  value={surveyType}
                 />
               </div>
               <div className="form-reg drag">

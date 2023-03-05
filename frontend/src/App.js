@@ -34,3 +34,12 @@ function App() {
 }
 
 export default App;
+
+//site depolylink
+//https://iridescent-seahorse-fa923e.netlify.app/
+
+//render backend site
+//https://surveyformprojectbackend.onrender.com
+
+//local backend
+//http://localhost:5000
