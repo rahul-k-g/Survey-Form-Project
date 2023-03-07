@@ -26,7 +26,7 @@ export default class FilesUploadComponent extends Component {
     formData.append("profileImg", this.state.profileImg);
     formData.append("uid", user);
     axios
-      .post("http://localhost:5000/api/user-profile", formData, {})
+      .post("https://surveyformprojectbackend.onrender.com/api/user-profile", formData, {})
       .then((res) => {
         console.log(res);
         window.location.reload(true)

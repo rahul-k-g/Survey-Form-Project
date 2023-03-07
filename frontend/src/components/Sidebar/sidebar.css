@@ -43,4 +43,13 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
   height:2em !important;
   fill:white;
 }
-
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-vubbuv {
+  position: relative;
+  top: 210px;
+  width: 80px;
+  position: relative;
+  right: 15px;
+  bottom: 5px;
+  height: 2em !important;
+  fill: white;
+}

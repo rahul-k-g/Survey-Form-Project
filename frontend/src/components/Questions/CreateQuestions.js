@@ -23,7 +23,7 @@ function CreateQuestions() {
         setQstn1option("")
         setQstn2option("")
         setQstn3option("")
-        const resp = await fetch("http://localhost:5000/api/createqstns", {
+        const resp = await fetch("https://surveyformprojectbackend.onrender.com/api/createqstns", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

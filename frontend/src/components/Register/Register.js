@@ -11,24 +11,24 @@ function Register() {
   const [profession, setprofession] = useState("");
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
-  const [cpass, setcpass] = useState("");
+  const [confirmPassword, setconfirmPassword] = useState("");
   const [response, setResponse] = useState([]);
   const [error, setError] = useState({
     email: { isValid: true, message: "" },
     password: { isValid: true, message: "" },
-    cpass: { isValid: true, message: "" },
+    confirmPassword: { isValid: true, message: "" },
   });
 
   const HandleSignup = async (event) => {
     event.preventDefault();
     setemail("");
     setpassword("");
-    setcpass("");
+    setconfirmPassword("");
     setusername("");
     setphone("");
     setprofession("");
 
-    const resp = await fetch("http://localhost:5000/api/register", {
+    const resp = await fetch("https://surveyformprojectbackend.onrender.com/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,7 +40,7 @@ function Register() {
         password,
         phone,
         profession,
-        cpass,
+        confirmPassword,
       }),
     });
     console.log(data.data);
@@ -79,24 +79,24 @@ function Register() {
           setError({ ...error, password: { isValid: true, message: "" } });
         }
         break;
-      case "cpass":
-        if (password !== cpass) {
+      case "confirmPassword":
+        if (password !== confirmPassword) {
           setError({
             ...error,
-            cpass: {
+            confirmPassword: {
               isValid: false,
               message: "Password and confirm Password doesn't match",
             },
           });
         } else {
-          setError({ ...error, cpass: { isValid: false, message: "" } });
+          setError({ ...error, confirmPassword: { isValid: false, message: "" } });
         }
         break;
     }
     console.log(error.email.message.length);
   };
 
-  const isSubmitValid = email.length && password.length && cpass.length;
+  const isSubmitValid = email.length && password.length && confirmPassword.length;
   return (
     <section className="register-form">
       <div className="container">
@@ -202,21 +202,21 @@ function Register() {
 
             <div className="form-regt">
               {" "}
-              <label htmlFor="cpass">
+              <label htmlFor="confirmPassword">
                 <b>Confirm Password</b>
               </label>
               <input
                 type="password"
                 placeholder="Confirm password"
                 className="reg-input"
-                name="cpass"
+                name="confirmPassword"
                 id="cpass"
                 required
-                onChange={(e) => setcpass(e.target.value)}
+                onChange={(e) => setconfirmPassword(e.target.value)}
                 onBlur={(event) => {
-                  checkErrors("cpass");
+                  checkErrors("confirmPassword");
                 }}
-                value={cpass}
+                value={confirmPassword}
               />
             </div>
             <div className="form-regt checkbox">
@@ -234,8 +234,8 @@ function Register() {
                   isSubmitValid === 0 ||
                   error.email.message.length !== 0 ||
                   error.password.message.length !== 0 ||
-                  error.cpass.message.length !== 0 ||
-                  password !== cpass
+                  error.confirmPassword.message.length !== 0 ||
+                  password !== confirmPassword
                     ? true
                     : false
                 }
@@ -255,8 +255,8 @@ function Register() {
                   ) : null}
                 </div>
                 <div id="mess1">
-                  {!error.cpass.isValid ? (
-                    <div style={{ color: "red" }}>{error.cpass.message}</div>
+                  {!error.confirmPassword.isValid ? (
+                    <div style={{ color: "red" }}>{error.confirmPassword.message}</div>
                   ) : null}
                 </div>
               </div>
